@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@postlight/mercury-parser": "github:mosegontar/mercury-parser#add_support_for_markdown_options",
+    "netlify-lambda": "^1.6.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "start:lambda": "netlify-lambda serve src/lambda --config webpack.functions.js",
+    "build:lambda": "netlify-lambda build src/lambda --config webpack.functions.js"
+  }
+}
